@@ -92,3 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2986b99538a074181abf5fa646f60c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nucleusFirstDialogue: {fileID: 11400000, guid: 1c4504b4d6ff8a746aa1c8b046c84070,
+    type: 2}
+  nucleusSecondDialogue: {fileID: 11400000, guid: 07925402646d8564eaeeaa6e3bdc1d8e,
+    type: 2}

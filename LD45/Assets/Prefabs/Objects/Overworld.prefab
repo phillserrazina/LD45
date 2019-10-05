@@ -94,3 +94,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noNucleusSprite: {fileID: 21300000, guid: 4f3525b059aac524aa9ac8e4503533d8, type: 3}
   yesNucleusSprite: {fileID: 21300000, guid: 7c613d68b020774409119571ad9077c2, type: 3}
+  yesNucleusDialogue: {fileID: 11400000, guid: 504b40bec2bb2384f9438ab7a3fecf02, type: 2}
+  noNucleusDialogue: {fileID: 11400000, guid: 5ca7c896771e8ed46b436c507598d8ae, type: 2}

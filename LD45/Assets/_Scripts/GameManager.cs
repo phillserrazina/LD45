@@ -12,4 +12,8 @@ public class GameManager : MonoBehaviour
     public void ReloadScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void LeaveGame() {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

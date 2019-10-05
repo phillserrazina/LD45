@@ -7,10 +7,12 @@ public abstract class WorldObject : MonoBehaviour
     protected ObjectTracker tracker;
 
     protected SpriteRenderer sRenderer;
+    protected DialoguePlayer dialoguePlayer;
 
     private void Awake() {
         tracker = FindObjectOfType<ObjectTracker>();
         sRenderer = GetComponent<SpriteRenderer>();
+        dialoguePlayer = FindObjectOfType<DialoguePlayer>();
     }
 
     protected void ChangeWorldSprite(Sprite s) {

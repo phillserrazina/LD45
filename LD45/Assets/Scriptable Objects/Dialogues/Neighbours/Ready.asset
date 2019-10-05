@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74283df5ed36414caacd26b6e62d16d, type: 3}
+  m_Name: Ready
+  m_EditorClassIdentifier: 
+  dialogueTextElements:
+  - Humans felt the need to move in packs. Groups. Communities.
+  - Helping your fellow neighbour became the norm.
+  - Destroying the world to gather more space for the fellow human.
+  - Killing all the animals in order to feed the fellow human.
+  - Everything for the fellow human, including ourselves.
+  - Self-love is, clearly, the most important form of love.
+  dialogueVoiceElements: []
+  textBoxIndex: 010000000100000002000000020000000000000000000000

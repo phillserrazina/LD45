@@ -7,15 +7,34 @@ public class Neighbours : WorldObject
     [SerializeField] private Sprite worldFinal = null;
     [SerializeField] private Sprite neededSprite = null;
 
+    [Space(10)]
+    [SerializeField] private DialogueSO readyDialogue = null;
+    [SerializeField] private DialogueSO notReadyDialogue = null;
+
     public override void UpdateObject() {
-        if (!tracker.overworldSpawned) { Destroy(gameObject); return; }
+        if (!tracker.overworldSpawned) {
+            dialoguePlayer.PlayDialogue(notReadyDialogue);
+            Destroy(gameObject); 
+            return; 
+        }
 
         var i = FindObjectOfType<Intelligence>();
-        if (i == null) { Destroy(gameObject); return; }
+        if (i == null) {
+            dialoguePlayer.PlayDialogue(notReadyDialogue);
+            Destroy(gameObject); 
+            return; 
+        }
 
         var iRenderer = i.GetComponent<SpriteRenderer>().sprite;
 
-        if (iRenderer == neededSprite) sRenderer.sprite = worldFinal;
-        else { Destroy(gameObject); return; }
+        if (iRenderer == neededSprite) {
+            dialoguePlayer.PlayDialogue(readyDialogue);
+            sRenderer.sprite = worldFinal;
+        } 
+        else {
+            dialoguePlayer.PlayDialogue(notReadyDialogue);
+            Destroy(gameObject); 
+            return; 
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialoguePlayer : MonoBehaviour
 {
@@ -14,17 +15,18 @@ public class DialoguePlayer : MonoBehaviour
 
     private Text currentTextBox;
     private DialogueSO currentDialogue;
+    private Spawner[] buttonList;
 
     // EXECUTION FUNCTIONS
 
     private void Start() {
         audioManager = FindObjectOfType<AudioManager>();
-
+        buttonList = FindObjectsOfType<Spawner>();
         PlayDialogue(introDialogue);
     }
 
     private void Update() {
-        if (Input.GetKey(KeyCode.Space)) {
+        if (Input.GetMouseButton(0)) {
             FadeOut();
         }
     }
@@ -40,6 +42,8 @@ public class DialoguePlayer : MonoBehaviour
 
         currentTextBox = textBox;
         currentDialogue = dialogue;
+
+        TriggerButtons(false);
     }
 
     // TODO: Have this be called at the end of fade out
@@ -49,6 +53,7 @@ public class DialoguePlayer : MonoBehaviour
             if (currentDialogue == introDialogue)
                 GameObject.Find("Buttons").GetComponent<Animator>().SetBool("Ready", true);
 
+            TriggerButtons(true);
             return;
         }
 
@@ -62,5 +67,15 @@ public class DialoguePlayer : MonoBehaviour
 
     public void FadeOut() {
         currentTextBox.GetComponent<Animator>().Play("Text_Fade_Out");
+    }
+
+    private void TriggerButtons(bool active) {
+        foreach (var b in buttonList) {
+            var button = b.GetComponent<Button>();
+            var eTrigger = b.GetComponent<EventTrigger>();
+
+            if (button.interactable == true) button.enabled = active;
+            if (eTrigger != null) eTrigger.enabled = active;
+        }
     }
 }

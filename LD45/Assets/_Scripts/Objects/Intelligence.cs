@@ -11,21 +11,71 @@ public class Intelligence : WorldObject
     [SerializeField] private Sprite treesNeededSprite = null;
     [SerializeField] private Sprite grassNeededSprite = null;
 
-    public override void UpdateObject() {
-        if (!tracker.overworldSpawned) { Destroy(gameObject); return; }
+    [Space(10)]
+    [SerializeField] private DialogueSO noWorldDialogue = null;
+    [SerializeField] private DialogueSO floodedNotEnoughOxygenDialogue = null;
+    [SerializeField] private DialogueSO floodedDialogue = null;
+    [SerializeField] private DialogueSO notEnoughOxygenDialogue = null;
+    [SerializeField] private DialogueSO deadworldDialogue = null;
+    [SerializeField] private DialogueSO overworldDialogue = null;
 
-        if (tracker.floodedworld) { sRenderer.sprite = floodedworldIntelligence; return; }
-        if (tracker.deadworld) { sRenderer.sprite = deadworldIntelligence; return; }
+    private void Start() {
+        if (!tracker.overworldSpawned) {
+            dialoguePlayer.PlayDialogue(noWorldDialogue);
+            Destroy(gameObject); 
+            return; 
+        }
 
         var t = FindObjectOfType<Trees>();
-        if (t == null) { sRenderer.sprite = deadworldIntelligence; return; }
-
         var g = FindObjectOfType<Grass>();
-        if (g == null) { sRenderer.sprite = deadworldIntelligence; return; }
+
+        if (tracker.floodedworld) { 
+            
+            if (t == null) {
+                dialoguePlayer.PlayDialogue(floodedNotEnoughOxygenDialogue);
+                Destroy(gameObject);
+                return; 
+            }
+
+            if (g == null) {
+                dialoguePlayer.PlayDialogue(floodedNotEnoughOxygenDialogue);
+                Destroy(gameObject);
+                return; 
+            }
+
+            dialoguePlayer.PlayDialogue(floodedDialogue); 
+            sRenderer.sprite = floodedworldIntelligence; 
+            return; 
+        }
+
+        if (tracker.deadworld) {
+            dialoguePlayer.PlayDialogue(deadworldDialogue);
+            sRenderer.sprite = deadworldIntelligence; 
+            return; 
+        }
+
+        if (t == null) {
+            dialoguePlayer.PlayDialogue(notEnoughOxygenDialogue);
+            sRenderer.sprite = deadworldIntelligence; 
+            return; 
+        }
+
+        if (g == null) {
+            dialoguePlayer.PlayDialogue(notEnoughOxygenDialogue);
+            sRenderer.sprite = deadworldIntelligence; 
+            return; 
+        }
 
         var ts = t.GetComponent<SpriteRenderer>().sprite;
         var gs = g.GetComponent<SpriteRenderer>().sprite;
 
-        if (ts == treesNeededSprite && gs == grassNeededSprite) sRenderer.sprite = overworldIntelligence;
+        if (ts == treesNeededSprite && gs == grassNeededSprite) {
+            dialoguePlayer.PlayDialogue(overworldDialogue);
+            sRenderer.sprite = overworldIntelligence;
+        }
+    }
+
+    public override void UpdateObject() {
+        
     }
 }

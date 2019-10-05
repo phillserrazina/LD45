@@ -44,10 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02eb785e72152646828bd9c1bfe1372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadworld: {fileID: 21300000, guid: 4f3525b059aac524aa9ac8e4503533d8, type: 3}
   normalGrass: {fileID: 21300000, guid: 4e79515c95222e244afe0c9b1468cf58, type: 3}
   neighbourGrass: {fileID: 21300000, guid: 75a4965f3d7fb204a8ac4737766ebd77, type: 3}
   deadGrass: {fileID: 21300000, guid: 0fd225bc662a70c4996b620d45e031a9, type: 3}
+  noWorldDialogue: {fileID: 11400000, guid: bda6ba7eddbe05b4e81083e2f40c4b6c, type: 2}
+  floodedDialogue: {fileID: 11400000, guid: b7ac0ae39cd77a246ac5ac4b3787595e, type: 2}
+  normalGrassWithTreesDialogue: {fileID: 11400000, guid: 464e84dbe5abea741a53c8ab7efa9d38,
+    type: 2}
+  normalGrassNoTreesDialogue: {fileID: 11400000, guid: 12078f6e07c1cb7459bfea4a853abf85,
+    type: 2}
+  deadGrassDialogue: {fileID: 11400000, guid: bfa1cf3f2ba3b0c4d91e88932c6f5383, type: 2}
+  neededTreeSprite: {fileID: 21300000, guid: 89ca5d10b227adc4180a87e7e30f8d37, type: 3}
 --- !u!212 &-1002857708692708178
 SpriteRenderer:
   m_ObjectHideFlags: 0

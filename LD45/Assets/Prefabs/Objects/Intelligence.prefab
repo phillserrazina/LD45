@@ -52,6 +52,14 @@ MonoBehaviour:
     type: 3}
   treesNeededSprite: {fileID: 21300000, guid: 89ca5d10b227adc4180a87e7e30f8d37, type: 3}
   grassNeededSprite: {fileID: 21300000, guid: 4e79515c95222e244afe0c9b1468cf58, type: 3}
+  noWorldDialogue: {fileID: 11400000, guid: 49d784c25cae610428f66596c953d649, type: 2}
+  floodedNotEnoughOxygenDialogue: {fileID: 11400000, guid: 4d9e26b06c26ff3478c3b6c9b12d2e72,
+    type: 2}
+  floodedDialogue: {fileID: 11400000, guid: ef6af46792adfcc438235ffa0bb35495, type: 2}
+  notEnoughOxygenDialogue: {fileID: 11400000, guid: d495028cb2caf1a408b3aefa303b3411,
+    type: 2}
+  deadworldDialogue: {fileID: 11400000, guid: d1be34e9f0bdb4a4b892ed6e1952df70, type: 2}
+  overworldDialogue: {fileID: 11400000, guid: 1171e1b9c1a52f74ba536716fe9c9fd2, type: 2}
 --- !u!212 &3760170696894882858
 SpriteRenderer:
   m_ObjectHideFlags: 0
