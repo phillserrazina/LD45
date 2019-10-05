@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Neighbours : MonoBehaviour
+public class Neighbours : WorldObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Sprite worldFinal = null;
+    [SerializeField] private Sprite neededSprite = null;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public override void UpdateObject() {
+        if (!tracker.overworldSpawned) { Destroy(gameObject); return; }
+
+        var i = FindObjectOfType<Intelligence>();
+        if (i == null) { Destroy(gameObject); return; }
+
+        var iRenderer = i.GetComponent<SpriteRenderer>().sprite;
+
+        if (iRenderer == neededSprite) sRenderer.sprite = worldFinal;
+        else { Destroy(gameObject); return; }
     }
 }

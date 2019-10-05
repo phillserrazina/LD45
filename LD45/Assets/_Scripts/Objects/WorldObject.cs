@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldObject : MonoBehaviour
+public abstract class WorldObject : MonoBehaviour
 {
     protected ObjectTracker tracker;
 
+    protected SpriteRenderer sRenderer;
+
     private void Awake() {
         tracker = FindObjectOfType<ObjectTracker>();
+        sRenderer = GetComponent<SpriteRenderer>();
     }
 
     protected void ChangeWorldSprite(Sprite s) {
@@ -20,4 +23,6 @@ public class WorldObject : MonoBehaviour
         var renderer = overworld.GetComponent<SpriteRenderer>();
         renderer.sprite = s;
     }
+
+    public abstract void UpdateObject();
 }

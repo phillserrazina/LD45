@@ -4,4 +4,7 @@ using UnityEngine;
 
 public class Nucleus : WorldObject
 {
+    public override void UpdateObject() {
+
+    }
 }

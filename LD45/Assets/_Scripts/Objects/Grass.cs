@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Grass : WorldObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Sprite normalGrass = null;
+    [SerializeField] private Sprite neighbourGrass = null;
+    [SerializeField] private Sprite deadGrass = null;
 
-    // Update is called once per frame
-    void Update()
-    {
+    public override void UpdateObject() {
+        if (!tracker.overworldSpawned) { Destroy(gameObject); return; }
+        if (tracker.floodedworld) { Destroy(gameObject); return; }
+
+        if (tracker.deadworld) {
+            sRenderer.sprite = deadGrass;
+            return;
+        }
         
+        if (!tracker.h20Spawned) {
+            sRenderer.sprite = deadGrass;
+            return;
+        }
+
+        if (tracker.neighboursSpawned) sRenderer.sprite = neighbourGrass;
+        else sRenderer.sprite = normalGrass;
     }
 }

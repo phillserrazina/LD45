@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trees : MonoBehaviour
+public class Trees : WorldObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Sprite fullworldTrees = null;
+    [SerializeField] private Sprite neighbourTrees = null;
+    [SerializeField] private Sprite deadTrees = null;
+    [SerializeField] private Sprite floodedTrees = null;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public override void UpdateObject() {
+        if (!tracker.overworldSpawned) { Destroy(gameObject); return; }
+
+        if (tracker.floodedworld) { sRenderer.sprite = floodedTrees; return; } 
+
+        if (tracker.overworld) {
+            if (tracker.neighboursSpawned) sRenderer.sprite = neighbourTrees;
+            else sRenderer.sprite = fullworldTrees;
+        } 
+        else sRenderer.sprite = deadTrees;
     }
 }

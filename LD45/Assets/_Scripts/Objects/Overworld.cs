@@ -13,4 +13,8 @@ public class Overworld : WorldObject
         if (tracker.nucleusSpawned) renderer.sprite = yesNucleusSprite;
         else renderer.sprite = noNucleusSprite;
     }
+
+    public override void UpdateObject() {
+
+    }
 }

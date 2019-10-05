@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private void Update() {
-        if (Input.GetKey(KeyCode.R)) {
-            ReloadScene();
-        }
+    private void Awake() {
+        QualitySettings.vSyncCount = 0;
     }
 
-    private void ReloadScene() {
+    public void ReloadScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
