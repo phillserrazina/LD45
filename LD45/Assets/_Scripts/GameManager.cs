@@ -14,6 +14,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void LeaveGame() {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("InGameMainMenu");
     }
 }

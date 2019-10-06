@@ -16,5 +16,8 @@ MonoBehaviour:
   - When water came about, there was nowhere for it to slip into.
   - The entire world became one large sea.
   - Although it was limited, there was now the possibility for life.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

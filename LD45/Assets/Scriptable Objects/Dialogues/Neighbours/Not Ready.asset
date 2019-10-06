@@ -15,6 +15,9 @@ MonoBehaviour:
   dialogueTextElements:
   - Only the more complex creatures can understand the meaning of "Community".
   - And you can only experience the sense of "neighbourly love" in a said community.
-  - Unfortunately, there are were no complex enough creatures to grasp this concept.
-  dialogueVoiceElements: []
+  - Unfortunately, there were no complex enough creatures to grasp this concept.
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 020000000100000000000000

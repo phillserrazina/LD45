@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTextElements:
   - Small beings were eager to evolve.
-  - To eager.
+  - Too eager.
   - They weren't ready for the tasks ahead of them.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

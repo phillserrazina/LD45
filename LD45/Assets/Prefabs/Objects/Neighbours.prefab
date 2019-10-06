@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldFinal: {fileID: 21300000, guid: db8a8b2c693c66f47904f8697f91e053, type: 3}
   neededSprite: {fileID: 21300000, guid: 6b9cac34a4c80f34e829665d68fe5c8e, type: 3}
+  readyDialogue: {fileID: 11400000, guid: 77f450ffd01760b46a1f416b190ac433, type: 2}
+  notReadyDialogue: {fileID: 11400000, guid: b131c3865f89ed74fb6fe51d1cc784b3, type: 2}
 --- !u!212 &-3986473416303658640
 SpriteRenderer:
   m_ObjectHideFlags: 0

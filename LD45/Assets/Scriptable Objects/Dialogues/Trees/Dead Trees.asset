@@ -17,5 +17,9 @@ MonoBehaviour:
   - They tried their best to stand tall and survive.
   - But the conditions were too harsh.
   - All the trees died.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 02000000010000000200000000000000

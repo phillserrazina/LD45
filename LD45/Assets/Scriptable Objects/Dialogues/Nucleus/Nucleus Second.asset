@@ -17,5 +17,9 @@ MonoBehaviour:
   - But the world was a giant piece of rock.
   - From the surface to the core.
   - There was no space for the nucleus.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 01000000020000000100000000000000

@@ -15,6 +15,7 @@ public class Grass : WorldObject
     [SerializeField] private DialogueSO deadGrassDialogue = null;
     [Space(10)]
     [SerializeField] private Sprite neededTreeSprite = null;
+    [SerializeField] private Sprite neededIntelligenceSprite = null;
 
     private void Start() {
         if (!tracker.overworldSpawned) {
@@ -24,6 +25,7 @@ public class Grass : WorldObject
         }
         if (tracker.floodedworld) { 
             dialoguePlayer.PlayDialogue(floodedDialogue);
+            sRenderer.sprite = null;
             return; 
         }
 
@@ -49,6 +51,12 @@ public class Grass : WorldObject
     }
 
     public override void UpdateObject() {
+        if (!tracker.overworld) return;
+
+        var i = FindObjectOfType<Intelligence>();
+        if (i == null) return;
+        if (i.GetComponent<SpriteRenderer>().sprite != neededIntelligenceSprite) return;
+
         if (tracker.neighboursSpawned) sRenderer.sprite = neighbourGrass;
         else sRenderer.sprite = normalGrass;
     }

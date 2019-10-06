@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 96738012}
   - component: {fileID: 96738015}
   - component: {fileID: 96738016}
+  - component: {fileID: 96738017}
   m_Layer: 5
   m_Name: N2 Button
   m_TagString: Untagged
@@ -567,6 +568,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &96738017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96738010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &97285550
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +726,7 @@ GameObject:
   - component: {fileID: 104019415}
   - component: {fileID: 104019418}
   - component: {fileID: 104019419}
+  - component: {fileID: 104019420}
   m_Layer: 5
   m_Name: O Button
   m_TagString: Untagged
@@ -897,6 +915,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &104019420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104019413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &144993587
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +945,7 @@ GameObject:
   - component: {fileID: 144993589}
   - component: {fileID: 144993592}
   - component: {fileID: 144993593}
+  - component: {fileID: 144993594}
   m_Layer: 5
   m_Name: T Button
   m_TagString: Untagged
@@ -1099,52 +1134,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!1 &344229776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 344229777}
-  - component: {fileID: 344229778}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &344229777
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344229776}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &344229778
+--- !u!114 &144993594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344229776}
+  m_GameObject: {fileID: 144993587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc77e3f6ce06f7743a07d1efeb79f290, type: 3}
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  mixerGroup: {fileID: 0}
-  sounds: []
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &415212656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617330343
 GameObject:
@@ -1845,6 +1850,7 @@ GameObject:
   - component: {fileID: 856789577}
   - component: {fileID: 856789580}
   - component: {fileID: 856789581}
+  - component: {fileID: 856789582}
   m_Layer: 5
   m_Name: I Button
   m_TagString: Untagged
@@ -2033,6 +2039,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &856789582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856789575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &889230511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2217,7 @@ GameObject:
   - component: {fileID: 981216557}
   - component: {fileID: 981216556}
   - component: {fileID: 981216555}
+  - component: {fileID: 981216558}
   m_Layer: 5
   m_Name: Reset Button
   m_TagString: Untagged
@@ -2242,7 +2265,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.36418653, g: 0.61519814, b: 0.8301887, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2314,6 +2337,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981216553}
   m_CullTransparentMesh: 0
+--- !u!114 &981216558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981216553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &987601629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,7 +3130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355489814
 GameObject:
@@ -3311,7 +3350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511743730
 GameObject:
@@ -3325,6 +3364,7 @@ GameObject:
   - component: {fileID: 1511743734}
   - component: {fileID: 1511743733}
   - component: {fileID: 1511743732}
+  - component: {fileID: 1511743735}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -3372,7 +3412,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8679245, g: 0.48718405, b: 0.48718405, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3444,6 +3484,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511743730}
   m_CullTransparentMesh: 0
+--- !u!114 &1511743735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511743730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1577864531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3514,7 @@ GameObject:
   - component: {fileID: 1577864533}
   - component: {fileID: 1577864536}
   - component: {fileID: 1577864537}
+  - component: {fileID: 1577864538}
   m_Layer: 5
   m_Name: N1 Button
   m_TagString: Untagged
@@ -3646,6 +3703,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1577864538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577864531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1612033821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,7 +3765,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635344090
 GameObject:
@@ -3790,7 +3863,7 @@ RectTransform:
   - {fileID: 97285551}
   - {fileID: 1153908174}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3954,6 +4027,7 @@ GameObject:
   - component: {fileID: 1778365706}
   - component: {fileID: 1778365709}
   - component: {fileID: 1778365710}
+  - component: {fileID: 1778365711}
   m_Layer: 5
   m_Name: G Button
   m_TagString: Untagged
@@ -4142,6 +4216,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1778365711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778365704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1809235827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,6 +4246,7 @@ GameObject:
   - component: {fileID: 1809235829}
   - component: {fileID: 1809235832}
   - component: {fileID: 1809235833}
+  - component: {fileID: 1809235834}
   m_Layer: 5
   m_Name: H Button
   m_TagString: Untagged
@@ -4344,6 +4435,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1809235834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809235827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Swipe
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1890328789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,7 +4735,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108753030
 GameObject:
@@ -4671,5 +4778,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

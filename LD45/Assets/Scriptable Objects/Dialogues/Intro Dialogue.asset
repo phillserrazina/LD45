@@ -16,5 +16,8 @@ MonoBehaviour:
   - NOTHING
   - That's how it was in the beginning.
   - And out of nothing, a lot was created.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 000000000000000000000000

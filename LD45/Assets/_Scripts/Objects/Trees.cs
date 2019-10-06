@@ -16,6 +16,7 @@ public class Trees : WorldObject
     [SerializeField] private DialogueSO waterTreesDialogue = null;
     [Space(10)]
     [SerializeField] private Sprite neededGrassSprite = null;
+    [SerializeField] private Sprite neededIntelligenceSprite = null;
 
     private void Start() {
         if (!tracker.overworldSpawned) {
@@ -24,11 +25,13 @@ public class Trees : WorldObject
             return;
         }
         if (tracker.floodedworld) {
+            sRenderer.sprite = floodedTrees;
             dialoguePlayer.PlayDialogue(waterTreesDialogue);
             return;
         }
 
         if (tracker.overworld) {
+            sRenderer.sprite = fullworldTrees;
             var g = FindObjectOfType<Grass>();
             if (g == null) dialoguePlayer.PlayDialogue(fullworldNoGrassDialogue);
             else {
@@ -36,16 +39,20 @@ public class Trees : WorldObject
                 else dialoguePlayer.PlayDialogue(fullworldNoGrassDialogue);
             }
         } 
-        else dialoguePlayer.PlayDialogue(deadTreesDialogue);
+        else {
+            sRenderer.sprite = deadTrees;
+            dialoguePlayer.PlayDialogue(deadTreesDialogue);
+        }
     }
 
     public override void UpdateObject() {
-        if (tracker.floodedworld) { sRenderer.sprite = floodedTrees; return; } 
+        if (!tracker.overworld) return;
 
-        if (tracker.overworld) {
-            if (tracker.neighboursSpawned) sRenderer.sprite = neighbourTrees;
-            else sRenderer.sprite = fullworldTrees;
-        } 
-        else sRenderer.sprite = deadTrees;
+        var i = FindObjectOfType<Intelligence>();
+        if (i == null) return;
+        if (i.GetComponent<SpriteRenderer>().sprite != neededIntelligenceSprite) return;
+
+        if (tracker.neighboursSpawned) sRenderer.sprite = neighbourTrees;
+        else sRenderer.sprite = fullworldTrees;
     }
 }

@@ -31,23 +31,26 @@ public class AudioManager : MonoBehaviour
 
 			s.source.outputAudioMixerGroup = s.mixerGroup;
 		}
-
-		//Play(sounds[UnityEngine.Random.Range(0, 3)].name);
 	}
 
 	private void Update() {
-		/*
+		
+		if (SceneManager.GetActiveScene().name != "MainScene") return;
+
 		foreach (Sound s in sounds) {
+			if (!s.name.Contains("Music")) continue;
+
 			if (s.source.isPlaying)
 				return;
 		}
 
-		Play(sounds[UnityEngine.Random.Range(0, 3)].name);
-		*/
+		Play("Music", 1);
 	}
 
-	public void Play(string sound)
+	public void Play(string sound, int index=-1)
 	{
+		if (index != -1) sound += " " + UnityEngine.Random.Range(1, index+1);
+
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)
 		{

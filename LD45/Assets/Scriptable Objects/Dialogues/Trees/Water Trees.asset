@@ -16,5 +16,8 @@ MonoBehaviour:
   - Trees started to sprout.
   - It wasn't easy with all the water, but they adapted quickly.
   - A diverse water fauna emerged.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

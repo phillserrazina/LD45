@@ -15,5 +15,7 @@ MonoBehaviour:
   dialogueTextElements:
   - First, there was the nucleus.
   - A big blob of molten lava.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - Low Echo
   textBoxIndex: 0100000000000000

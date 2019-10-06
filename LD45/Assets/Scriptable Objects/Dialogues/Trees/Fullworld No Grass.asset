@@ -16,5 +16,8 @@ MonoBehaviour:
   - Trees sprouted from the earth.
   - All sorts of tall trees, small trees, fruit trees.
   - The conditions were almost ideal for the next step.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

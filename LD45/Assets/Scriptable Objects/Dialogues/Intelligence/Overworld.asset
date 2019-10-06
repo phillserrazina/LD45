@@ -17,5 +17,9 @@ MonoBehaviour:
   - All sorts of creatures started roaming around the world.
   - The sea, the mountains, the valleys. Filled with different species.
   - It was a new era in The Overworld.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 01000000020000000100000000000000

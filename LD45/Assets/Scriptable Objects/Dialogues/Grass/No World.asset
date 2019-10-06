@@ -18,5 +18,10 @@ MonoBehaviour:
   - And floated...
   - And floated...
   - Away
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 0100000002000000010000000200000000000000

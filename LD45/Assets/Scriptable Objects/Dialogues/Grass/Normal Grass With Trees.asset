@@ -16,5 +16,8 @@ MonoBehaviour:
   - The water fed the earth enough for grass to grow.
   - Most of the world was covered by it after just a few hundreds of years.
   - The world was ready for the next step.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 020000000100000000000000

@@ -17,5 +17,9 @@ MonoBehaviour:
   - The rivers of lava ceased to exist.
   - And in their place, came streams of water and lakes.
   - There was place for life now.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 01000000020000000100000000000000

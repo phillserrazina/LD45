@@ -16,5 +16,8 @@ MonoBehaviour:
   - Water was created.
   - But it had nothing to hold on to.
   - So it just floated through space.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 020000000100000000000000

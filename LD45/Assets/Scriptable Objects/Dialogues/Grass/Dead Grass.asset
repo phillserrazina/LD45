@@ -17,5 +17,9 @@ MonoBehaviour:
   - But there were no conditions for them to survive.
   - They died.
   - But it was a fast, clean kill.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 01000000020000000100000000000000

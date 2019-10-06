@@ -16,5 +16,8 @@ MonoBehaviour:
   - Several microorganisms attempted to evolve.
   - It was a hard task, demanding of much energy.
   - Energy that they just didn't have.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 020000000100000000000000

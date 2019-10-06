@@ -56,6 +56,8 @@ MonoBehaviour:
   deadTreesDialogue: {fileID: 11400000, guid: 0d029630cba3d204482a20e17d79e247, type: 2}
   waterTreesDialogue: {fileID: 11400000, guid: b04e3ea384102424aae2ee17401c4e18, type: 2}
   neededGrassSprite: {fileID: 21300000, guid: 4e79515c95222e244afe0c9b1468cf58, type: 3}
+  neededIntelligenceSprite: {fileID: 21300000, guid: 6b9cac34a4c80f34e829665d68fe5c8e,
+    type: 3}
 --- !u!212 &1098930863119302681
 SpriteRenderer:
   m_ObjectHideFlags: 0

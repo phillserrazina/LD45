@@ -17,5 +17,9 @@ MonoBehaviour:
   - And like that they stayed.
   - Small and insignificant.
   - In The Dead World
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 02000000010000000200000000000000

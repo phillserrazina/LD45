@@ -17,5 +17,9 @@ MonoBehaviour:
   - The small green strokes could barely get any sun to survive.
   - But there they stayed, in the bottom of the ocean.
   - Silently
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 01000000020000000100000000000000

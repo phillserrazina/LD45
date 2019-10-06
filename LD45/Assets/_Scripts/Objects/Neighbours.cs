@@ -11,7 +11,7 @@ public class Neighbours : WorldObject
     [SerializeField] private DialogueSO readyDialogue = null;
     [SerializeField] private DialogueSO notReadyDialogue = null;
 
-    public override void UpdateObject() {
+    private void Start() {
         if (!tracker.overworldSpawned) {
             dialoguePlayer.PlayDialogue(notReadyDialogue);
             Destroy(gameObject); 
@@ -36,5 +36,9 @@ public class Neighbours : WorldObject
             Destroy(gameObject); 
             return; 
         }
+    }
+
+    public override void UpdateObject() {
+        
     }
 }

@@ -16,5 +16,8 @@ MonoBehaviour:
   - Intelligence is a gift given to all living things.
   - Essential to understand and analyze one's surroundings.
   - Too bad there are no surroundings to be analyzed.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

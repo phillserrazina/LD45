@@ -17,5 +17,9 @@ MonoBehaviour:
   - But they had nothing strong enough to hold on to.
   - Nor there was any atmosphere for them to survive.
   - They got frozen and destroyed by space.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 02000000010000000200000000000000

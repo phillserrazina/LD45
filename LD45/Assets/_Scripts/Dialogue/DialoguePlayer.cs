@@ -13,7 +13,7 @@ public class DialoguePlayer : MonoBehaviour
     private int currentDialogueIndex = 0;
     private AudioManager audioManager;
 
-    private Text currentTextBox;
+    public Text currentTextBox { get; private set; }
     private DialogueSO currentDialogue;
     private Spawner[] buttonList;
 
@@ -26,7 +26,7 @@ public class DialoguePlayer : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButtonUp(0)) {
             FadeOut();
         }
     }
@@ -53,6 +53,7 @@ public class DialoguePlayer : MonoBehaviour
             if (currentDialogue == introDialogue)
                 GameObject.Find("Buttons").GetComponent<Animator>().SetBool("Ready", true);
 
+            currentTextBox = null;
             TriggerButtons(true);
             return;
         }
@@ -60,13 +61,17 @@ public class DialoguePlayer : MonoBehaviour
         Text textBox = textBoxes[currentDialogue.textBoxIndex[currentDialogueIndex]];
 
         textBox.text = currentDialogue.dialogueTextElements[currentDialogueIndex];
+        string currentSound = currentDialogue.dialogueVoiceElements[currentDialogueIndex];
+        if (currentSound.Length > 0) audioManager.Play(currentSound);
         textBox.GetComponent<Animator>().Play("Text_Fade_In");
 
         currentTextBox = textBox;
     }
 
     public void FadeOut() {
+        if (currentTextBox == null) return;
         currentTextBox.GetComponent<Animator>().Play("Text_Fade_Out");
+        audioManager.Play("Drop", 3);
     }
 
     private void TriggerButtons(bool active) {

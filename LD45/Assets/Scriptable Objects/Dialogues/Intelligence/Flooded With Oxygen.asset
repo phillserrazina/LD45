@@ -16,5 +16,8 @@ MonoBehaviour:
   - Several microorganisms started suffering mutations.
   - After a few thousands of years, all types of creatures were roaming the seas.
   - It was a new era of The Flooded World.
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 020000000100000000000000

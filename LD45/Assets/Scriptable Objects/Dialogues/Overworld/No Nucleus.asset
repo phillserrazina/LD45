@@ -16,5 +16,8 @@ MonoBehaviour:
   - The world started off as a big mass of rock.
   - Flat as a paper sheet.
   - No mountains, no declines. Nope. Flat
-  dialogueVoiceElements: []
+  dialogueVoiceElements:
+  - 
+  - 
+  - Low Echo
   textBoxIndex: 010000000200000000000000

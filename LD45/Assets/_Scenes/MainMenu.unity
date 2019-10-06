@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.3, y: 0}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 100, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488272145
@@ -261,7 +261,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Play
@@ -429,7 +429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46.6, y: 0}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 70, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &691220013
@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 747430245}
   - component: {fileID: 747430244}
   - component: {fileID: 747430247}
+  - component: {fileID: 747430248}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -591,7 +592,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: -180, y: 60}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 47.24, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &747430244
 MonoBehaviour:
@@ -750,6 +751,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &747430248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747430242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &766533756
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +831,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839814108
 GameObject:
@@ -829,6 +846,7 @@ GameObject:
   - component: {fileID: 839814111}
   - component: {fileID: 839814110}
   - component: {fileID: 839814113}
+  - component: {fileID: 839814114}
   m_Layer: 5
   m_Name: Settings Button
   m_TagString: Untagged
@@ -855,7 +873,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: -180, y: 25}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &839814110
 MonoBehaviour:
@@ -895,7 +913,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1663711855}
   m_OnClick:
     m_PersistentCalls:
@@ -1014,6 +1032,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &839814114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839814108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &881560909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46.599976, y: 0}
+  m_AnchoredPosition: {x: 9.8, y: 0}
   m_SizeDelta: {x: 70, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088746724
@@ -1248,6 +1282,7 @@ GameObject:
   - component: {fileID: 1204020939}
   - component: {fileID: 1204020938}
   - component: {fileID: 1204020941}
+  - component: {fileID: 1204020942}
   m_Layer: 5
   m_Name: Credits Button
   m_TagString: Untagged
@@ -1274,7 +1309,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: -180, y: -10}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 72.47, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1204020938
 MonoBehaviour:
@@ -1314,7 +1349,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 626847332}
   m_OnClick:
     m_PersistentCalls:
@@ -1433,6 +1468,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1204020942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204020936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1443294743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1592,7 @@ GameObject:
   - component: {fileID: 1658689810}
   - component: {fileID: 1658689809}
   - component: {fileID: 1658689812}
+  - component: {fileID: 1658689813}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -1567,7 +1619,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: -180, y: -45}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 41.17, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1658689809
 MonoBehaviour:
@@ -1726,6 +1778,22 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1658689813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658689807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bc25ee7b6579d48bd3e14ef9a1f020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Knock
+  randomSoundIndex: 2
+  clickSoundName: Drop
+  randomClickSoundIndex: 3
 --- !u!1 &1663711853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.79998, y: 0}
+  m_AnchoredPosition: {x: -0.0000038146973, y: 0}
   m_SizeDelta: {x: 81.6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1957647662
@@ -2051,10 +2119,79 @@ RectTransform:
   - {fileID: 881560910}
   - {fileID: 1130212797}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &5838040868548115727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4242278552131422405, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242278552131422404, guid: 45961698609b0a9468598d4c02b584ad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45961698609b0a9468598d4c02b584ad, type: 3}
