@@ -47,6 +47,7 @@ public class Trees : WorldObject
 
     public override void UpdateObject() {
         if (!tracker.overworld) return;
+        if (sRenderer.sprite == deadTrees) return;
 
         var i = FindObjectOfType<Intelligence>();
         if (i == null) return;

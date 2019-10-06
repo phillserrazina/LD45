@@ -33,8 +33,8 @@ public class H20 : WorldObject
         var g = FindObjectOfType<Grass>();
         var i = FindObjectOfType<Intelligence>();
 
-        if (t != null) Destroy(t.gameObject);
-        if (g != null) Destroy(g.gameObject);
+        if (t != null && !tracker.overworld) Destroy(t.gameObject);
+        if (g != null && !tracker.overworld) Destroy(g.gameObject);
         if (i != null) Destroy(i.gameObject);
     }
 

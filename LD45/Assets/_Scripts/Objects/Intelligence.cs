@@ -73,6 +73,10 @@ public class Intelligence : WorldObject
             dialoguePlayer.PlayDialogue(overworldDialogue);
             sRenderer.sprite = overworldIntelligence;
         }
+        else {
+            dialoguePlayer.PlayDialogue(deadworldDialogue);
+            sRenderer.sprite = deadworldIntelligence;
+        }
     }
 
     public override void UpdateObject() {

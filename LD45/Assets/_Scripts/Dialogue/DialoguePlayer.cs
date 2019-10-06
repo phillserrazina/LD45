@@ -55,6 +55,15 @@ public class DialoguePlayer : MonoBehaviour
 
             currentTextBox = null;
             TriggerButtons(true);
+
+            var bList = FindObjectsOfType<Spawner>();
+
+            foreach (var b in bList) {
+                if (b.GetComponent<Button>().interactable == true) return;
+            }
+
+            FindObjectOfType<ResultsManager>().ShowResults();
+
             return;
         }
 

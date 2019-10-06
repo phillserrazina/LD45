@@ -52,6 +52,7 @@ public class Grass : WorldObject
 
     public override void UpdateObject() {
         if (!tracker.overworld) return;
+        if (sRenderer.sprite == deadGrass) return;
 
         var i = FindObjectOfType<Intelligence>();
         if (i == null) return;
